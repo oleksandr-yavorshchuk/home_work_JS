@@ -17,7 +17,7 @@ console.log(+(sum/3).toFixed(2));
 const discount = Math.round(Math.random() * (99 - 1) + 1);
 console.log(discount);
 console.log(sum/ 100 * (100 - discount));
-console.log(Math.round((sum/2)-(sum * (discount / 100))));
+console.log((sum/2)-(sum * (discount / 100)));
 
 document.writeln(
     `
@@ -32,6 +32,6 @@ document.writeln(
             <b>Середнє значення цін:</b> ${+(sum/3).toFixed(2)}</br>
             <b>Випадкова знижка:</b> ${discount}%<br>
             <b>Сума до оплати, після знижки:</b> ${sum/ 100 * (100 - discount)}<br>
-            <b>Чистий прибуток, після знижки:</b> ${Math.round((sum/2)-(sum * (discount / 100)))}<br>
+            <b>Чистий прибуток, після знижки:</b> ${((sum/2)-(sum * (discount / 100)))}<br>
         </i>
     `)
