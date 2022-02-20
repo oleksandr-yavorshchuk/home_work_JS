@@ -26,7 +26,7 @@ document.writeln(
             <b>Вартість всіх товарів:</b> ${sum}<br>
             <b>Вартість всіх товарів (спершу округленна):</b> ${Math.floor(sum)}<br>
             <b>Вартість всіх товарів (округленна до сотень):</b> ${Math.round((sum)/100)*100}<br>
-            <b>Чи є сума парним числом:</b> ${!(Math.floor(sum)%2)}<br>
+            <b>Чи є сума парним числом:</b> ${!(Math.floor(((Math.floor(meatprice))+(Math.floor(beerprice))+(Math.floor(breadprice))))%2)}<br>
             <b>Сума решти, при оплаті 500грн:</b> ${500-sum}<br>
             <b>Середнє значення цін:</b> ${+(sum/3).toFixed(2)}</br>
             <b>Випадкова знижка:</b> ${Math.round(Math.random() * (99 - 1) + 1)}<br>
