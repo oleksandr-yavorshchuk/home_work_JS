@@ -9,9 +9,9 @@ console.log(sum);
 console.log(Math.floor(breadprice));
 console.log(Math.floor(beerprice));
 console.log(Math.floor(meatprice));
-console.log(Math.floor(sum));
+console.log(Math.floor((Math.floor(meatprice))+(Math.floor(beerprice))+(Math.floor(breadprice))));
 console.log(Math.round((sum)/100)*100);
-console.log (!(Math.floor(sum)%2));
+console.log (!(Math.floor((Math.floor(meatprice))+(Math.floor(beerprice))+(Math.floor(breadprice)))%2));
 console.log(500-sum);
 console.log(+(sum/3).toFixed(2));
 console.log (Math.round(Math.random() * (99 - 1) + 1))
